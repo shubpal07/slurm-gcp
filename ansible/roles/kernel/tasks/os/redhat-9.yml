@@ -28,6 +28,8 @@
 - block:
   - name: Reboot
     reboot:
+      reboot_timeout: 1200
+      post_reboot_delay: 60
   - name: Gather facts after reboot
     setup:
   when: reboot
