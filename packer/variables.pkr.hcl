@@ -175,6 +175,19 @@ variable "install_gcsfuse" {
   default     = true
 }
 
+variable "install_lmod" {
+  description = "enable install of Lmod from git source"
+  type        = bool
+  default     = true
+}
+
+variable "clean_legacy_modules" {
+  description = "clean legacy conflicting module/scl profile scripts"
+  type        = bool
+  default     = true
+}
+
+
 variable "monitoring_agent" {
   description = "Select which agent to install"
   type        = string
