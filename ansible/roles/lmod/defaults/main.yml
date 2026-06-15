@@ -18,3 +18,6 @@ lmod_version: 8.5.9
 lmod_paths:
   build: '{{paths.apps}}/lmod/{{lmod_version}}'
   src: '{{paths.apps}}/lmod/src'
+
+install_lmod: true
+clean_legacy_modules: "{{ install_lmod }}"
